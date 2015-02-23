@@ -1,9 +1,14 @@
 var express = require ('express');
 var morgan = require('morgan');
+var routes = require('./public/routes/');
 
 var app = express();
 
 var swig = require('swig');
+
+app.use('/', routes);
+
+app.use(express.static(__dirname + '/public'));
 
 swig.setDefaults({cache: false});
 
@@ -13,10 +18,6 @@ app.set('views', __dirname + '/public/views');
 
 app.use(morgan('dev'));
 
-app.get('/', function (req, res) {
-  	var people = [{name: 'Full'}, {name: 'Stacker'}, {name: 'Son'}];
-	res.render( 'index', {title: 'Hall of Fame', people: people} );
-})
 
 var server = app.listen(3000, function(){
 

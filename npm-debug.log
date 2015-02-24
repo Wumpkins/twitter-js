@@ -1,23 +1,91 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'test' ]
+1 verbose cli   'install',
+1 verbose cli   'pody-parser',
+1 verbose cli   '--save' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.36
 4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
-5 error Failed to parse json
-5 error Unexpected string
-6 error File: C:\Users\David Chen\Desktop\college\spring 2015\webdev\twitter-js\package.json
-7 error Failed to parse package.json data.
-7 error package.json must be actual JSON, not just JavaScript.
-7 error
-7 error This is not a bug in npm.
-7 error Tell the package author to fix their package.json file. JSON.parse
-8 error System Windows_NT 6.2.9200
-9 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "test"
-10 error cwd C:\Users\David Chen\Desktop\college\spring 2015\webdev\twitter-js
-11 error node -v v0.10.36
-12 error npm -v 1.4.28
-13 error file C:\Users\David Chen\Desktop\college\spring 2015\webdev\twitter-js\package.json
-14 error code EJSONPARSE
-15 verbose exit [ 1, true ]
+5 warn package.json twitter-js@1.0.0 No repository field.
+6 warn package.json twitter-js@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'pody-parser', null ]
+9 verbose cache add name=undefined spec="pody-parser" args=["pody-parser",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'pody-parser',
+10 verbose parsed url   path: 'pody-parser',
+10 verbose parsed url   href: 'pody-parser' }
+11 silly lockFile c97e7366-pody-parser pody-parser
+12 verbose lock pody-parser C:\Users\David Chen\AppData\Roaming\npm-cache\c97e7366-pody-parser.lock
+13 silly lockFile c97e7366-pody-parser pody-parser
+14 silly lockFile c97e7366-pody-parser pody-parser
+15 verbose addNamed [ 'pody-parser', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile b7ceb04d-pody-parser pody-parser@
+18 verbose lock pody-parser@ C:\Users\David Chen\AppData\Roaming\npm-cache\b7ceb04d-pody-parser.lock
+19 silly addNameRange { name: 'pody-parser', range: '*', hasData: false }
+20 verbose request where is /pody-parser
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id 9b048222e5b86de9
+23 verbose url raw /pody-parser
+24 verbose url resolving [ 'https://registry.npmjs.org/', './pody-parser' ]
+25 verbose url resolved https://registry.npmjs.org/pody-parser
+26 verbose request where is https://registry.npmjs.org/pody-parser
+27 info trying registry request attempt 1 at 15:44:28
+28 http GET https://registry.npmjs.org/pody-parser
+29 http 404 https://registry.npmjs.org/pody-parser
+30 verbose headers { date: 'Mon, 23 Feb 2015 20:44:24 GMT',
+30 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 verbose headers   'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=0',
+30 verbose headers   'content-length': '52',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   age: '0',
+30 verbose headers   'x-served-by': 'cache-atl6233-ATL',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1424724264.370436,VS0,VE319',
+30 verbose headers   'keep-alive': 'timeout=10, max=50',
+30 verbose headers   connection: 'Keep-Alive' }
+31 silly registry.get cb [ 404,
+31 silly registry.get   { date: 'Mon, 23 Feb 2015 20:44:24 GMT',
+31 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     'cache-control': 'max-age=0',
+31 silly registry.get     'content-length': '52',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     age: '0',
+31 silly registry.get     'x-served-by': 'cache-atl6233-ATL',
+31 silly registry.get     'x-cache': 'MISS',
+31 silly registry.get     'x-cache-hits': '0',
+31 silly registry.get     'x-timer': 'S1424724264.370436,VS0,VE319',
+31 silly registry.get     'keep-alive': 'timeout=10, max=50',
+31 silly registry.get     connection: 'Keep-Alive' } ]
+32 silly lockFile b7ceb04d-pody-parser pody-parser@
+33 silly lockFile b7ceb04d-pody-parser pody-parser@
+34 error 404 404 Not Found: pody-parser
+34 error 404
+34 error 404 'pody-parser' is not in the npm registry.
+34 error 404 You should bug the author to publish it
+34 error 404 It was specified as a dependency of 'twitter-js'
+34 error 404
+34 error 404 Note that you can also install from a
+34 error 404 tarball, folder, or http url, or git url.
+35 error System Windows_NT 6.2.9200
+36 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "pody-parser" "--save"
+37 error cwd C:\Users\David Chen\Desktop\college\spring 2015\webdev\twitter-js
+38 error node -v v0.10.36
+39 error npm -v 1.4.28
+40 error code E404
+41 verbose exit [ 1, true ]

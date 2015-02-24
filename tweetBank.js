@@ -3,7 +3,12 @@ var _ = require('underscore');
 var data = new Array();
 
 var add = function (name, text) {
-  data.push({ name: name, text: text });
+	var id = 1;
+	for(var i = 0; i < data.length; i++){
+		if(data[i].name==name)
+			id++;
+	}
+	data.push({ name: name, id: id, text: text});
 };
 
 var list = function () {
@@ -34,3 +39,11 @@ var getFakeTweet = function() {
 for(var i=0; i<10; i++) {
   module.exports.add( getFakeName(), getFakeTweet() );
 }
+
+module.exports.add( "David Chen", "Test1");
+module.exports.add( "David Chen", "Test2");
+module.exports.add( "David Chen", "Test3");
+module.exports.add( "David Chen", "Test4");
+module.exports.add( "David Chen", "Test5");
+module.exports.add( "David Chen", "Test6");
+module.exports.add( "David Chen", "Test7");
